@@ -35,6 +35,7 @@ body {
 
 .active {
   color: var(--accent-color);
+  position: relative;
 }
 
 h1,
@@ -186,6 +187,18 @@ img {
   fill: currentColor;
 }
 
+.active::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: currentColor;
+}
+
 /* HEADER END */
 
 /* HERO */
@@ -332,6 +345,27 @@ img {
   margin-top: 30px;
 }
 
+.skills-thumb {
+  position: relative;
+}
+
+.skills-examples {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 370px;
+  min-height: 70px;
+  padding: 27px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /* END - РОД ДЕЯТЕЛЬНОСТИ */
 
 /* НАША КОМАНДА */
